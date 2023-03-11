@@ -7,7 +7,7 @@
 #
 
 
-name: 编译OpenWrt-X86固件
+name: 编译OpenWrt-R5S固件
 
 on:
   workflow_dispatch:
