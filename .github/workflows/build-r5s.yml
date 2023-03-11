@@ -56,7 +56,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        target: [Lede_r5s]  #[Lede_r5s,ImmortalWrt_r5s,Xiaoxifu64_lede_r5s,Xiaoxifu64_immortalWrt_r5s]
+        target: [Xiaoxifu64_lede_r5s]  #[Lede_r5s,ImmortalWrt_r5s,Xiaoxifu64_lede_r5s,Xiaoxifu64_immortalWrt_r5s]
 
     steps:
     - name: 准备结束
