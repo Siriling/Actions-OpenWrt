@@ -23,7 +23,7 @@ env:
   REPO_URL: https://github.com/xiaoxifu64/immortalwrt
   REPO_BRANCH: master
   FEEDS_CONF: feeds/Xiaoxifu64_immortalwrt.conf
-  CONFIG_FILE: configs/Xiaoxifu64_immortalwrt_r5s.config
+  CONFIG_FILE: configs/Xiaoxifu64/Xiaoxifu64_immortalwrt_r5s.config
   DIY_P1_SH: scripts/diy.sh
   # DIY_P2_SH: diy-application.sh
   UPLOAD_BIN_DIR: false
