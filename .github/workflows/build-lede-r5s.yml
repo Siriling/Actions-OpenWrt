@@ -24,8 +24,8 @@ env:
   REPO_BRANCH: master
   FEEDS_CONF: feeds/Lede.conf
   CONFIG_FILE: configs/Lede/Lede_r5s.config
-  DIY_P1_SH: scripts/diy.sh
-  DIY_P2_SH: scripts/diy.sh
+  DIY_P1_SH: scripts/diy-1.sh
+  DIY_P2_SH: scripts/diy-2.sh 
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_COWTRANSFER: true
