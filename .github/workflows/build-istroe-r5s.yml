@@ -158,7 +158,7 @@ jobs:
       id: tag
       if: env.UPLOAD_RELEASE == 'true' && !cancelled()
       run: |
-        echo "release_tag=$(date +"%Y.%m.%d-%H.%M")-Lede" >> $GITHUB_OUTPUT
+        echo "release_tag=$(date +"%Y.%m.%d-%H.%M")-iStoreOS" >> $GITHUB_OUTPUT
         echo "release_date=$(date +"%Y.%m.%d")" >> $GITHUB_OUTPUT
         touch release.txt
         echo "## 🗒️ 固件信息" >> release.txt
@@ -173,7 +173,7 @@ jobs:
       env:
           GITHUB_TOKEN: ${{ secrets.REPO_TOKEN }}
       with:
-          name: 📦‍ 固件下载 | Lede-R5S-linux.6.1 | ${{ steps.tag.outputs.release_date }}
+          name: 📦‍ 固件下载 | iStoreOS-R5S | ${{ steps.tag.outputs.release_date }}
           tag_name: ${{ steps.tag.outputs.release_tag }}
           body_path: release.txt
           files: ${{ env.FIRMWARE }}/*
