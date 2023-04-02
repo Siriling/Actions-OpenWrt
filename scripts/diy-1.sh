@@ -24,6 +24,9 @@
 # rm -rf openwrt-package/verysync
 # rm -rf openwrt-package/luci-app-verysync
 
+# 5G Modem Suppor
+git clone https://github.com/Siriling/5G-Modem-Support.git package/wwan
+
 # Add OpenAppFilter
 git clone --depth=1 https://github.com/DHDAXCW/OpenAppFilter
 
