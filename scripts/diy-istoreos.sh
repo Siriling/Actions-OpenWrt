@@ -12,11 +12,20 @@
 # Change default shell to zsh
 # sed -i 's/\/bin\/ash/\/usr\/bin\/zsh/g' package/base-files/files/etc/passwd
 
+# mt7921
+# rm -rf package/kernel/rtl8821cu
+rm -rf package/kernel/mac80211
+rm -rf package/network/services/hostapd
+svn export https://github.com/openwrt/openwrt/trunk/package/kernel/mac80211 package/kernel/mac80211
+svn export https://github.com/openwrt/openwrt/trunk/package/network/services/hostapd package/network/services/hostapd
+rm -rf package/kernel/mac80211/Makefile
+cp -f $GITHUB_WORKSPACE/mt7921/Makefile package/kernel/mac80211/Makefile
+
 # 修改默认IP地址
 sed -i 's/192.168.1.1/192.168.10.1/g' package/base-files/files/bin/config_generate
 
 # 修改主机名字
-sed -i 's/OpenWrt/R5S/g' package/base-files/files/bin/config_generate
+# sed -i 's/OpenWrt/R5S/g' package/base-files/files/bin/config_generate
 
 # 修改版本号
 # sed -i 's/R22.3.3/R22.3.3定制版/g' package/lean/default-settings/files/zzz-default-settings
