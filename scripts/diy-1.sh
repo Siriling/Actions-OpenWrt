@@ -29,7 +29,7 @@ rm -rf ../../customfeeds/luci/applications/luci-app-unblockmusic
 git clone --depth=1 https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic.git
 
 # Add OpenAppFilter
-git clone --depth=1 https://github.com/DHDAXCW/OpenAppFilter
+# git clone --depth=1 https://github.com/DHDAXCW/OpenAppFilter
 
 # Mod zzz-default-settings
 # pushd package/lean/default-settings/files
