@@ -24,6 +24,10 @@
 # rm -rf openwrt-package/verysync
 # rm -rf openwrt-package/luci-app-verysync
 
+# Add luci-app-unblockneteasemusic
+rm -rf ../../customfeeds/luci/applications/luci-app-unblockmusic
+git clone --depth=1 https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic.git
+
 # 5G Modem Suppor
 git clone https://github.com/Siriling/5G-Modem-Support.git package/wwan
 
