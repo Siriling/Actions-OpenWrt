@@ -56,6 +56,13 @@ jobs:
     #     sudo mkdir -p /workdir
     #     sudo chown $USER:$GROUPS /workdir
 
+    - name: Initialization environment
+      env:
+        DEBIAN_FRONTEND: noninteractive
+      run: |
+        sudo mkdir -p /workdir
+        sudo chown $USER:$GROUPS /workdir
+
     - name: Clone source code
       working-directory: /workdir
       run: |
